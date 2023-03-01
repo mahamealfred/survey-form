@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microverse Sevey Form</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+   
+
+    <h1 id="title"> Microverse Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+  <label id="name-label" for="name">Name</label >
+  <input  type="text"  class="field" id="name" placeholder="Enter your name"   required/>
+  <label  for="email">Email</label >
+  <label id="email-label" for="email">Email</label >
+  <input type="email" class="field" id="email" placeholder="Enter your email" required>
+  <label id="number-label" for="number">Age (Optional)</label >
+  <input type="number" class="field" id="number" min="15" max="99" placeholder="Select your age">
+  <label  >Which option best describes your current role?</label >
+    <select id="dropdown " name="role" class="field" required>
+   <option disabled selected value>Select current role</option>
+   <option value="student">Student</option>
+   <option value="job">Full Time</option>
+   <option value="preferNo">Prefer not to say</option>
+   <option value="other">Other</option>
+    </select>
+    <label  >Would you recommend freeCodeCamp to a friend?</label >
+  <label  for="comment">Any comments or suggestions?</label>
+  <textarea placeholder="Enter your comment here..." class="field"></textarea>
+				<button class="btn">Submit</button>
+    </form>
+    
+</body>
+</html>
